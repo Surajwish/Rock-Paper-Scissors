@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="input">
+        <span>Enter the number of round</span>
+        <input type = "number" data-ns-test="game-number" id ="round">
+    </div>
+    <div class="metrics">
+        <div>User points <p data-ns-test="user-points" id="user-points">0</p></div>
+        <div>Computer Points <p data-ns-test="comp-points" id="comp-points">0</p></div>
+        <div>Rounds left <p data-ns-test="rounds-left" id="rounds-left">0</p></div>
+    </div>
+    <button data-ns-test="play-game" id = "play" onclick="begin()" >Play</button>
+    <div id="user-option">
+        <div class="obj" data-ns-test="rock"
+        ><img id="0" src="data/rock.png"> </div>
+        <div class="obj" data-ns-test="paper" ><img id="1" src="data/paper.png"></div>
+        <div class="obj" data-ns-test="scissors"><img  id= "2" src="data/scissor.png"></div>
+    </div>
+    <p class = "comp-choice">Computers choice<img id="comp-choice"></p>
+    <div data-ns-test="round-resut" id ="round_result"></div>
+    <div data-ns-test=="game-result" id ="game-result"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
