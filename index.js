@@ -6,11 +6,14 @@ let compPoint=0;
 let roundRes=document.getElementById("round_result");
 
 function begin(){
-        document.getElementById("user-points").innerHTML=0;
-       document.getElementById("comp-points").innerHTML=0;
-       document.getElementById("game-result").innerHTML="";
-       roundRes.innerHTML="";
+    userPoint=0;
+    compPoint=0;
+    document.getElementById("user-points").innerHTML=0;
+    document.getElementById("comp-points").innerHTML=0;
+    document.getElementById("game-result").innerHTML="";
+    roundRes.innerHTML="";
     rounds = document.getElementById('round').value;
+    document.getElementById("rounds-left").innerHTML=rounds
     document.getElementById('user-option').addEventListener('click', check);
 }
 function getRandomvalue(){
